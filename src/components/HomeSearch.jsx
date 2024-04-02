@@ -30,8 +30,8 @@ export default function HomeSearch() {
             <BsFillMicFill className='text-lg' />
         </form>
        <div className="flex flex-col space-y-2 sm:space-y-0 sm:flex-row mt-8 sm:space-x-4">
-        <button className="bg-[#f8f9fa] rounded-md text-sm text-gray-800 hover:ring-gray-200 focus:outline-none active:ring-gray-300 hover:shadow-md w-36 h-10 transition-shadow" onClick={handleSubmit}>Google Search</button>
-            <button className="bg-[#f8f9fa] rounded-md text-sm text-gray-800 hover:ring-gray-200 focus:outline-none active:ring-gray-300 hover:shadow-md w-36 h-10 transition-shadow" onClick={randomSearch}>{randomSearchLoading ? 'Loading...' : 'I am Feeling Lucky'}</button>
+        <button disabled={randomSearchLoading} className="bg-[#f8f9fa] rounded-md text-sm text-gray-800 hover:ring-gray-200 focus:outline-none active:ring-gray-300 hover:shadow-md w-36 h-10 transition-shadow" onClick={handleSubmit}>Google Search</button>
+            <button className="bg-[#f8f9fa] rounded-md text-sm text-gray-800 hover:ring-gray-200 focus:outline-none active:ring-gray-300 hover:shadow-md w-36 h-10 transition-shadow disabled:opacity-80 disabled:shadow-sm" onClick={randomSearch}>{randomSearchLoading ? 'Loading...' : 'I am Feeling Lucky'}</button>
        </div>
     </>
   )

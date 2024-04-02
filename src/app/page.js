@@ -12,6 +12,8 @@ export default function Home() {
       width={300}
       height={100}
       alt='Google'
+      priority
+      style={{width:'auto'}}
     /> 
     <HomeSearch />
    </div>
